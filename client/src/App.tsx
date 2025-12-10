@@ -39,7 +39,6 @@ function App() {
         responseType: 'blob' // FORCE binary response
       });
 
-      // FIX IS HERE: Explicitly tell the browser this is a PDF
       const pdfBlob = new Blob([response.data], { type: 'application/pdf' });
 
       // Create a URL for the PDF blob
