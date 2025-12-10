@@ -1,0 +1,168 @@
+/* Global Reset */
+body {
+  background-color: #f4f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* 2-Column Layout */
+.layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px;
+}
+
+/* --- LEFT COLUMN: Form --- */
+.form-panel {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 500;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  /* Fixes padding width issues */
+}
+
+input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* --- RIGHT COLUMN: Panels --- */
+.preview-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.id-card,
+.label-preview-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.label-title {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ID Box Style */
+.id-box {
+  background: #eef6ff;
+  border: 1px solid #d0e3ff;
+  border-radius: 6px;
+  text-align: center;
+  padding: 15px;
+}
+
+.id-box h3 {
+  margin: 0;
+  color: #205081;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.id-box small {
+  color: #3b82f6;
+  font-size: 0.8rem;
+}
+
+.help-text {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* --- THE STICKER PREVIEW (Visual Only) --- */
+.sticker-visual {
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 4px;
+  background: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sticker-text {
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.sticker-barcode {
+  margin: 5px 0;
+}
+
+.sticker-footer {
+  font-size: 0.7rem;
+  color: #333;
+}
+
+.sticker-status {
+  font-weight: bold;
+  font-size: 0.6rem;
+  margin-top: 2px;
+}
+
+/* Print Button */
+.print-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.print-btn:hover {
+  background-color: #dfe6e9;
+}
